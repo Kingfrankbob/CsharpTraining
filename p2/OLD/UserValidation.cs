@@ -1,11 +1,10 @@
-
 namespace UserInput
 {
-    static class UserValidation
+    public class UserValidation
     {
-        static void Validation()
+        public static void Validation()
         {
-            Console.WriteLine("Enter a Valid Number\n ofc between 1 & 10");
+            Console.WriteLine("Enter a Valid Number\nofc between 1 & 10");
             int inputNumber = int.Parse(Console.ReadLine());
 
             if (inputNumber <= 10 && inputNumber >= 1)

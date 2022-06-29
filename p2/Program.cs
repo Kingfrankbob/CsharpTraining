@@ -1,41 +1,45 @@
-﻿
-namespace UserInput
+﻿namespace UserInput
 {
-
-        static void Main(string[] args){
-
-            Console.WriteLine("Please select a program to run:\n1.Number Validation\n2.Which is bigger?");
-            int choice = int.Parse(Console.ReadLine());
-            switch(choice){
+    class program
+    {
+        static void Main()
+        {
+            int choice = getInput.getChoice();
+            switch (choice)
+            {
 
                 case 1:
-                UserValidation.Validation();
-                break; 
+                    problemOne.Validation();
+                    program.Main();
+                    break;
 
-            }
-            
+                case 2:
+                    problemTwo.BiggerOfTwo();
+                    program.Main();
+                    break;
 
+                case 3:
+                    problemThree.LandscapeOrPortrait();
+                    program.Main();
+                    break;
 
-        }
+                case 4:
+                    problemFour.SpeedCamera();
+                    program.Main();
+                    break;
 
-    
-        static void BiggerofTwo()
-        {
-            int first = 0, second = 0;
-            Console.WriteLine("Enter the first number\n");
-            first = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the second number\n");
-            second = int.Parse(Console.ReadLine());
-            if(first > second){
-                Console.WriteLine("First is bigger then second being {0}", first);
+                case 5:
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("\nGoodbye\n");
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.Beep();
+                    Console.Beep();
+                    break;
 
-            } 
-            else if(second > first){
-                Console.WriteLine("Second is bigger then first being: {0}", second);
-            }
-            else 
-            {
-                Console.WriteLine("Sorry cant help you there");
+                default:
+                    Console.WriteLine("Invalid Input");
+                    program.Main();
+                    break;
             }
         }
     }

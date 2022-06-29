@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ajwpc\\Github\\csharptraining\\p2\\p2.csproj": {}
+    "C:\\Users\\cragu\\Source\\Repos\\CsharpTraining\\p2\\p2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ajwpc\\Github\\csharptraining\\p2\\p2.csproj": {
+    "C:\\Users\\cragu\\Source\\Repos\\CsharpTraining\\p2\\p2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ajwpc\\Github\\csharptraining\\p2\\p2.csproj",
+        "projectUniqueName": "C:\\Users\\cragu\\Source\\Repos\\CsharpTraining\\p2\\p2.csproj",
         "projectName": "p2",
-        "projectPath": "C:\\Users\\ajwpc\\Github\\csharptraining\\p2\\p2.csproj",
-        "packagesPath": "C:\\Users\\ajwpc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ajwpc\\Github\\csharptraining\\p2\\obj\\",
+        "projectPath": "C:\\Users\\cragu\\Source\\Repos\\CsharpTraining\\p2\\p2.csproj",
+        "packagesPath": "C:\\Users\\cragu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cragu\\Source\\Repos\\CsharpTraining\\p2\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ajwpc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\cragu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
