@@ -35,9 +35,9 @@ namespace Exercises
             {
 
                 John?.Introduce();
-                Console.WriteLine(John.Age);
-                Person.MakeOld(John);
-                Console.WriteLine(John.Age);
+                Console.WriteLine(John?.Age);
+                Person.MakeOld(John!);
+                Console.WriteLine(John?.Age);
 
             }
 
