@@ -4,7 +4,7 @@ namespace frootLoops
     {
         public static void threeDone()
         {
-            Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.DarkRed;
 
             var count = 0;
 
@@ -19,7 +19,7 @@ namespace frootLoops
             string err = "";
 
             if(min < max || min == max){
-                
+
             for(var i = min; i < max; i++)
             {
                 if(i%3 == 0) count += 1;
