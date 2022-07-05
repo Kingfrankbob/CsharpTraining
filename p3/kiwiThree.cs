@@ -17,7 +17,7 @@ namespace frootLoops
                 fvalue *= i;
             }
 
-            Console.WriteLine("{0}! = {1}", factor, fvalue);
+            Console.WriteLine("{0}! = {1}\n", factor, fvalue);
 
         }
     }

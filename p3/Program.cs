@@ -15,10 +15,10 @@
                     program.Main();
                     break;
                 
-                // case 2:
-                   // problemTwo.BiggerOfTwo();
-                   // program.Main();
-                    // break;
+                case 2:
+                    appleTwo.itOkay();
+                    program.Main();
+                    break;
 
                 case 3:
                     kiwiThree.kwFactor();
