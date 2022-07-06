@@ -4,6 +4,7 @@ namespace frootLoops
   {
     public static void itOkay()
     {
+      Console.ForegroundColor = ConsoleColor.Magenta;
       int sum = 0;
       while (true)
       {
@@ -27,7 +28,7 @@ namespace frootLoops
         {
           Console.ForegroundColor = ConsoleColor.Red;
           Console.WriteLine("\nInvalid Input\n");
-          Console.ForegroundColor = ConsoleColor.Gray;
+          Console.ForegroundColor = ConsoleColor.Magenta;
           continue;
         }
       }

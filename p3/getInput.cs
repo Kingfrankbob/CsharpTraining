@@ -8,14 +8,15 @@ namespace frootLoops
       {
         Console.WriteLine(@"Please select a program to run (1-5):
 1. 3 Divisor Check
-2. Which is bigger?
+2. Add 'em up!
 3. Factorial Calculator
-4. Speed Camera
-5. Exit
+4. Random Number Guess!?
+5. Biggest of them all
+6. Exit
 ");
 
         int choice = int.Parse(Console.ReadLine() ?? "");
-        if (choice < 1 || choice > 5)
+        if (choice < 1 || choice > 6)
         {
           throw new Exception();
         }

@@ -4,7 +4,6 @@ namespace frootLoops
     {
         public static void kwFactor()
         {
-            // Console.BackgroundColor = ConsoleColor.DarkYellow;
             Console.ForegroundColor = ConsoleColor.Green;
 
             Console.WriteLine("Please enter a value for the Factoral Calculator");

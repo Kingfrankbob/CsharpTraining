@@ -1,35 +1,70 @@
+using System.Text;
 namespace frootLoops
 {
     class strawberryFive
     {
         public static void MMMck()
         {
-            int testn = 0;
-            List<int> numbers = new List<int>();
+            List<string> numbers = new List<string>();
             int Previous = 0;
-            
-            Console.WriteLine("Enter a string of Numbers:");
-            string input = Console.ReadLine();
-                            
-            foreach (var value in input)
+            string toap;
+            Console.ForegroundColor = ConsoleColor.Red;
+
+            Console.WriteLine("Enter a string of Numbers: (Seperated by a Comma)");
+            string? input = Console.ReadLine();
+            if(input == null)
             {
-                string ok = value.ToString();
-                bool success = int.TryParse(ok, out testn);
-                if(success)
+                while(input == null)
                 {
-                    numbers.Add(value);
-                }    
+                    Console.WriteLine("At least put someting!!!!");
+                    Console.WriteLine("Enter a string of Numbers: (Seperated by a Comma)");
+                    input = Console.ReadLine();  
+                }
+            }
+
+            var sb = new StringBuilder();
+
+            foreach (char value in input)
+            {
+                int truvalue = (int)Char.GetNumericValue(value);
+            
+                if(truvalue <= 9 && truvalue >= 0)
+                {
+                   // var sb = new StringBuilder();
+                    sb.Append(value);
+
+                }
+                else if(truvalue > 9 || truvalue < 0)
+                {
+                    toap = sb.ToString();
+                    numbers.Add(toap);
+                    sb = new StringBuilder();
+                }                
+            }
+
+            toap = sb.ToString();
+            numbers.Add(toap);
+            if(numbers == null || numbers.Count == 0)
+            {
+                Console.WriteLine("Please Try again when you feel like putting stuff in correctly :(");
             }
             
-            numbers.ForEach(Console.WriteLine);
+            // numbers.ForEach(Console.WriteLine); // Debug Purposes
 
-
-                foreach (var value in numbers)
+                foreach (string value in numbers)
                 {
-                    if(value > Previous) Previous = value;
+                    try
+                    {
+                        int thisss = int.Parse(value);
+                        if(thisss > Previous) Previous = thisss;
+                    }
+                    catch(Exception)
+                    {
+                        //Do nothing
+                    }
                 }
 
-            Console.WriteLine("The biggest of the Entered is: {0}", Previous);
+           Console.WriteLine("The biggest of the Entered is: {0}", Previous);
         
                 
             

@@ -26,11 +26,16 @@
                     break;
 
                 case 4:
-                    strawberryFive.MMMck();
+                    blueberryFour.randomNumberGuess();
                     program.Main();
                     break;
 
                 case 5:
+                    strawberryFive.MMMck();
+                    program.Main();
+                    break;
+
+                case 6:
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("\nGoodbye\n");
                     Console.ForegroundColor = ConsoleColor.Gray;
