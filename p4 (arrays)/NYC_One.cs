@@ -10,14 +10,15 @@ namespace Vacashon
       {
         Console.WriteLine("Enter your friends names or press enter.");
         var names = Console.ReadLine();
-        if (String.IsNullOrWhiteSpace(names))
+        if (!String.IsNullOrWhiteSpace(names))
         {
-          break;
+          friends.Add(names);
+          continue;
         }
-        friends.Add(names);
+        break;
       }
-      int friendsCount = friends.Count;
-      switch (friendsCount)
+
+      switch (friends.Count)
       {
         case 0:
           Console.WriteLine("You have no friends.");
@@ -29,7 +30,7 @@ namespace Vacashon
           Console.WriteLine("{0} and {1} like your post.", friends[0], friends[1]);
           break;
         default:
-          Console.WriteLine("{0}, {1} and {3} others like your post.", friends[0], friends[1], friendsCount - 2);
+          Console.WriteLine("{0}, {1} and {2} others like your post.", friends[0], friends[1], friends.Count - 2);
           break;
       }
     }

@@ -34,13 +34,13 @@
         //   program.Main();
         //   break;
 
-        // case 6:
-        //   Console.ForegroundColor = ConsoleColor.Green;
-        //   Console.WriteLine("\nGoodbye\n");
-        //   Console.ForegroundColor = ConsoleColor.Gray;
-        //   Console.Beep();
-        //   Console.Beep();
-        //   break;
+        case 6:
+          Console.ForegroundColor = ConsoleColor.Green;
+          Console.WriteLine("\nGoodbye\n");
+          Console.ForegroundColor = ConsoleColor.Gray;
+          Console.Beep();
+          Console.Beep();
+          break;
 
         default:
           // Console.WriteLine("Invalid Input");
