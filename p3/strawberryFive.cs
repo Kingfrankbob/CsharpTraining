@@ -30,9 +30,7 @@ namespace frootLoops
             
                 if(truvalue <= 9 && truvalue >= 0)
                 {
-                   // var sb = new StringBuilder();
                     sb.Append(value);
-
                 }
                 else if(truvalue > 9 || truvalue < 0)
                 {
@@ -44,9 +42,11 @@ namespace frootLoops
 
             toap = sb.ToString();
             numbers.Add(toap);
+
             if(numbers == null || numbers.Count == 0)
             {
                 Console.WriteLine("Please Try again when you feel like putting stuff in correctly :(");
+                numbers.Add("get it over with.");
             }
             
             // numbers.ForEach(Console.WriteLine); // Debug Purposes
