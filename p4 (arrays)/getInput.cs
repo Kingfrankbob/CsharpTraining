@@ -8,10 +8,10 @@ namespace Vacashon
       {
         Console.WriteLine(@"Please select a program to run (1-5):
 1. Friends Check
-2. Add 'em up!
+2. Reversi
 3. Get Five Numbers
-4. Random Number Guess!?
-5. Biggest of them all
+4. Uniquity
+5. Smallest of All
 6. Exit
 ");
 
