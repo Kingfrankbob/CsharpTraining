@@ -19,10 +19,10 @@
         //   program.Main();
         //   break;
 
-        // case 3:
-        //   kiwiThree.kwFactor();
-        //   program.Main();
-        //   break;
+        case 3:
+          MexicoThree.numberAsk();
+          program.Main();
+          break;
 
         // case 4:
         //   blueberryFour.randomNumberGuess();
