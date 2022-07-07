@@ -43,7 +43,6 @@ namespace Vacashon
 
             toap = sb.ToString();
             numbers.Add(toap);
-
             for (int i = 0; i < 3; i++)
             {
                 foreach (string str in numbers)
@@ -63,7 +62,7 @@ namespace Vacashon
             }
 
             Console.WriteLine("\nThe smallest three are: {0}, {1}, {2}\n", Previous1, Previous2, Previous3);
-     
+
         }
     }
 }
