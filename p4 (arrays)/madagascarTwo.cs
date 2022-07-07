@@ -10,6 +10,7 @@ namespace Vacashon
             try
             {
                 name = Console.ReadLine();
+                if(name == null) throw new Exception();
             }
             catch (Exception)
             {

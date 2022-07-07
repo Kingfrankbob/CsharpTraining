@@ -6,7 +6,9 @@ namespace Vacashon
         public static void Smallestofall()
         {
             List<string> numbers = new List<string>();
-            int Previous = 2147483647;
+            int Previous1 = 2147483647;
+            int Previous2 = 2147483647;
+            int Previous3 = 2147483647;
             string toap;
 
             Console.WriteLine("Enter a string of Numbers: (Seperated by a Comma)");
@@ -41,20 +43,26 @@ namespace Vacashon
 
             toap = sb.ToString();
             numbers.Add(toap);
-
-            for(int i = 0; i < 3; i++)
-            foreach (string str in numbers)
+            for (int i = 0; i < 3; i++)
             {
-                try
+                foreach (string str in numbers)
                 {
-                    int thisss = int.Parse(str);
-                    if (thisss < Previous) Previous = thisss;
-                }
-                catch (Exception)
-                {
-                    //Do nothing
+                    try
+                    {
+                        int thisss = int.Parse(str);
+                        if (thisss < Previous1 && i == 0) Previous1 = thisss;
+                        if (thisss < Previous2 && i == 1 && thisss > Previous1) Previous2 = thisss;
+                        if (thisss < Previous3 && i == 2 && thisss > Previous2) Previous3 = thisss;
+                    }
+                    catch (Exception)
+                    {
+                        //Do nothing
+                    }
                 }
             }
+
+            Console.WriteLine("\nThe smallest three are: {0}, {1}, {2}\n", Previous1, Previous2, Previous3);
+
         }
     }
 }
