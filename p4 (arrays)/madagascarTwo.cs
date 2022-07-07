@@ -5,11 +5,11 @@ namespace Vacashon
     {
         public static void Reversi()
         {
-            string? name = "";
+            string name = "";
             Console.WriteLine("Please enter your name:");
             try
             {
-                name = Console.ReadLine();
+                name = Console.ReadLine() ?? "";
             }
             catch (Exception)
             {
