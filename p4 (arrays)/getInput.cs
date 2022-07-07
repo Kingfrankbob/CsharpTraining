@@ -9,7 +9,7 @@ namespace Vacashon
         Console.WriteLine(@"Please select a program to run (1-5):
 1. Friends Check
 2. Add 'em up!
-3. Factorial Calculator
+3. Get Five Numbers
 4. Random Number Guess!?
 5. Biggest of them all
 6. Exit
