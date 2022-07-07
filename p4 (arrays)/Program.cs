@@ -44,8 +44,8 @@
                     break;
 
                 default:
-                    // Console.WriteLine("Invalid Input");
-                    // program.Main();
+                    Console.WriteLine("Invalid Input");
+                    program.Main();
                     break;
 
             }

@@ -43,6 +43,12 @@ namespace Vacashon
 
             toap = sb.ToString();
             numbers.Add(toap);
+
+            if (numbers.Count() < 5 || numbers == null)
+            {
+                Console.WriteLine("Invalid list try again");
+                moscowFive.Smallestofall();
+            }
             for (int i = 0; i < 3; i++)
             {
                 foreach (string str in numbers)
