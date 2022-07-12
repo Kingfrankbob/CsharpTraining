@@ -99,6 +99,22 @@ namespace yarn
       if(input == "") program.Main();
       
       input.Trim();
+      var lcek = input.Last();
+      if(lcek == '-')
+      {
+        Console.WriteLine("¬_¬ please, enter in a last digit:");
+        string? input1 = Console.ReadLine();
+        try
+        {
+          int? Checked = int.Parse(input1);
+        }
+        catch (Exception)
+        {
+         Console.WriteLine("*facepalm* PLEASE try again");
+         return getnumbyhyphen();
+        }
+
+      }
       var alldig = input.Replace('-', '0');
       if(input.Contains("-") && alldig.All(char.IsDigit) )
       {
