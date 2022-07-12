@@ -10,7 +10,7 @@ namespace yarn
 1. 3 Divisor Check
 2. Add 'em up!
 3. Factorial Calculator
-4. Random Number Guess!?
+4. Pascal's Case
 5. Biggest of them all
 6. Exit
 ");
