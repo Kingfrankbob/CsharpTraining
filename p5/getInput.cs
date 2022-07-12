@@ -94,12 +94,14 @@ namespace yarn
         }
         public static int[] getnumbyhyphen(int exit = 0)
         {
+          int exiting = 0;;
             try
             {
+                
                 Console.WriteLine("Please enter a string of numbers separated by a hyphen:");
                 string? test = Console.ReadLine();
                 if (String.IsNullOrWhiteSpace(test) == true && exit == 0) throw new Exception();
-                else if (String.IsNullOrWhiteSpace(test) == true && exit == 1) return program.Main();
+                else if (String.IsNullOrWhiteSpace(test) == true && exit == 1) exiting = 1;
 
                 var array = new List<string>();
 
@@ -150,10 +152,17 @@ namespace yarn
             }
             catch (Exception)
             {
+              if(exiting == 1)
+              {
+               return null; 
+              }
+              else
+              {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\nInvalid Input\n");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 return getnumbyhyphen();
+              }
             }
             
         }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace yarn
 {
-    public class AmaranthOne
+    public class Amaranth
     {
         public static void Consornt()
         {
