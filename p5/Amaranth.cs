@@ -18,8 +18,11 @@ namespace yarn
             {
                 if (i == (length - 1)) break;
                 else if(extraarray[i] == (extraarray[i + 1] - 1)) cont = 1;
-                else if(extraarray[i] != (extraarray[i + 1] - 1)) cont = 0;
-                
+                else if(extraarray[i] != (extraarray[i + 1] - 1)){
+                 cont = 0;
+                 break;
+                }
+                else cont = 99;                
             }
             if(cont == 1)
             {
