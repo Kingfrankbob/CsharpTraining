@@ -99,7 +99,8 @@ namespace yarn
       if(input == "") program.Main();
       
       input.Trim();
-      if(input.Contains("-") && input.All(char.IsDigit) )
+      var alldig = input.Replace('-', '0');
+      if(input.Contains("-") && alldig.All(char.IsDigit) )
       {
         string[] inputArray = input.Split('-');
         int[] numbers = new int[inputArray.Length];
