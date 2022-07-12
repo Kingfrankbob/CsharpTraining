@@ -20,10 +20,10 @@
         //   program.Main();
         //   break;
 
-        // case 3:
-        //   kiwiThree.kwFactor();
-        //   program.Main();
-        //   break;
+        case 3:
+          yellow.timeToStop();
+          program.Main();
+          break;
 
         case 4:
           green.PascalCase();

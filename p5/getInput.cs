@@ -9,7 +9,7 @@ namespace yarn
         Console.WriteLine(@"Please select a program to run (1-5):
 1. 3 Divisor Check
 2. Add 'em up!
-3. Factorial Calculator
+3. Time to Stop
 4. Pascal's Case
 5. Vowel Counter
 6. Exit
