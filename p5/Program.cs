@@ -10,10 +10,10 @@
       switch (choice)
       {
 
-        // case 1:
-        //   cherryOne.threeDone();
-        //   program.Main();
-        //   break;
+         case 1:
+          Amaranth.Consornt();
+          program.Main();
+           break;
 
         // case 2:
         //   appleTwo.itOkay();
