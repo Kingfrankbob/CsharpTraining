@@ -30,10 +30,10 @@
           program.Main();
           break;
 
-        // case 5:
-        //   strawberryFive.MMMck();
-        //   program.Main();
-        //   break;
+        case 5:
+          blue.VowelCounter();
+          program.Main();
+          break;
 
         case 6:
           Console.ForegroundColor = ConsoleColor.Green;
@@ -43,11 +43,8 @@
           Console.Beep();
           break;
 
-        // default:
-        //   // Console.WriteLine("Invalid Input");
-        //   // program.Main();
-        //   break;
-
+        default:
+          break;
       }
     }
   }

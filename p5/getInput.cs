@@ -11,7 +11,7 @@ namespace yarn
 2. Add 'em up!
 3. Factorial Calculator
 4. Pascal's Case
-5. Biggest of them all
+5. Vowel Counter
 6. Exit
 ");
 
