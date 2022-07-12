@@ -2,7 +2,7 @@
 {
   public class program
   {
-    static void Main()
+    public static void Main()
     {
       Console.ForegroundColor = ConsoleColor.Gray;
       Console.BackgroundColor = ConsoleColor.Black;
