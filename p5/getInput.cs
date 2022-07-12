@@ -100,7 +100,7 @@ namespace yarn
       {
         program.Main();
       }
-      
+      input.Trim();
       if(input.Contains("-") && input.All(char.IsDigit))
       {
         string[] inputArray = input.Split('-');
