@@ -96,12 +96,10 @@ namespace yarn
     {
       Console.WriteLine("Enter a few numbers separated by a hyphen");
       string input = Console.ReadLine() ?? "";
-      if(string.IsNullOrEmpty(input) && !string.IsNullOrWhiteSpace(input))
-      {
-        program.Main();
-      }
+      if(input == "") program.Main();
+      
       input.Trim();
-      if(input.Contains("-") && input.All(char.IsDigit))
+      if(input.Contains("-") && input.All(char.IsDigit) )
       {
         string[] inputArray = input.Split('-');
         int[] numbers = new int[inputArray.Length];
