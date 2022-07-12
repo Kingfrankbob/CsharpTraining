@@ -20,34 +20,31 @@
         //   program.Main();
         //   break;
 
-        // case 3:
-        //   kiwiThree.kwFactor();
-        //   program.Main();
-        //   break;
+        case 3:
+          yellow.timeToStop();
+          program.Main();
+          break;
 
-        // case 4:
-        //   blueberryFour.randomNumberGuess();
-        //   program.Main();
-        //   break;
+        case 4:
+          green.PascalCase();
+          program.Main();
+          break;
 
-        // case 5:
-        //   strawberryFive.MMMck();
-        //   program.Main();
-        //   break;
+        case 5:
+          blue.VowelCounter();
+          program.Main();
+          break;
 
-        // case 6:
-        //   Console.ForegroundColor = ConsoleColor.Green;
-        //   Console.WriteLine("\nGoodbye\n");
-        //   Console.ForegroundColor = ConsoleColor.Gray;
-        //   Console.Beep();
-        //   Console.Beep();
-        //   break;
+        case 6:
+          Console.ForegroundColor = ConsoleColor.Green;
+          Console.WriteLine("\nGoodbye\n");
+          Console.ForegroundColor = ConsoleColor.Gray;
+          Console.Beep();
+          Console.Beep();
+          break;
 
-        // default:
-        //   // Console.WriteLine("Invalid Input");
-        //   // program.Main();
-        //   break;
-
+        default:
+          break;
       }
     }
   }
