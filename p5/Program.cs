@@ -15,10 +15,10 @@
           program.Main();
            break;
 
-        // case 2:
-        //   appleTwo.itOkay();
-        //   program.Main();
-        //   break;
+        case 2:
+          vermilion.duplicato();
+          program.Main();
+          break;
 
         case 3:
           yellow.timeToStop();

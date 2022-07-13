@@ -8,8 +8,8 @@ namespace yarn
       try
       {
         Console.WriteLine(@"Please select a program to run (1-5):
-1. 3 Divisor Check
-2. Add 'em up!
+1. Consecutive or not?
+2. Duplicates?
 3. Time to Stop
 4. Pascal's Case
 5. Vowel Counter

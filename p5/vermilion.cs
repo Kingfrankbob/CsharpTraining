@@ -7,7 +7,7 @@ namespace yarn
 {
     public class vermilion
     {
-        static void duplicato()
+        public static void duplicato()
         {
             int[] array = getInput.getnumbyhyphen();
             int dup = 0;

@@ -8,18 +8,20 @@ namespace yarn
     // If the user doesn't provide any values, consider it as invalid time.
     public static void timeToStop()
     {
-      var time = new DateTime();
+      var time = new TimeSpan();
       try
       {
         Console.WriteLine("Please enter a time value in the 24-hour time format (e.g. 19:00).\n");
-        time = DateTime.Parse(Console.ReadLine() ?? "");
+        time = TimeSpan.Parse(Console.ReadLine() ?? "");
+        Console.WriteLine("Ok");
+        
       }
       catch (Exception)
       {
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("\nInvalid Time\n");
+        Console.WriteLine("Invalid Time");
         Console.ForegroundColor = ConsoleColor.Gray;
-        return;
+        timeToStop();
       }
     }
   }
