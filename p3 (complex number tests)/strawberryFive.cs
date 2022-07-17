@@ -10,14 +10,14 @@ namespace frootLoops
       string toap;
       Console.ForegroundColor = ConsoleColor.Red;
 
-      Console.WriteLine("Enter a string of Numbers: (Seperated by a Comma)");
+      Console.WriteLine("Enter a string of Numbers: (Separated by a Comma)");
       string? input = Console.ReadLine();
       if (input == null)
       {
         while (input == null)
         {
-          Console.WriteLine("At least put someting!!!!");
-          Console.WriteLine("Enter a string of Numbers: (Seperated by a Comma)");
+          Console.WriteLine("At least put something!!!!");
+          Console.WriteLine("Enter a string of Numbers: (Separated by a Comma)");
           input = Console.ReadLine();
         }
       }

@@ -6,7 +6,7 @@ namespace frootLoops
         {
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.WriteLine("Please enter a value for the Factoral Calculator");
+            Console.WriteLine("Please enter a value for the Factorial Calculator");
 
             var factor = getInput.getIntNotNeg();
             var fvalue = 1;

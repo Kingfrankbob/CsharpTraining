@@ -49,6 +49,7 @@ namespace Vacashon
         Console.WriteLine("Invalid list try again");
         moscowFive.Smallestofall();
       }
+      
       for (int i = 0; i < 3; i++)
       {
         if (numbers == null)
