@@ -9,7 +9,7 @@ namespace frootLoops
       int Previous = 0;
       string toap;
       Console.ForegroundColor = ConsoleColor.Red;
-
+      numbers.Add(" ");
       Console.WriteLine("Enter a string of Numbers: (Separated by a Comma)");
       string? input = Console.ReadLine();
       if (input == null)
@@ -46,7 +46,7 @@ namespace frootLoops
       if (numbers == null || numbers.Count == 0)
       {
         Console.WriteLine("Please Try again when you feel like putting stuff in correctly :(");
-        numbers.Add("get it over with.");
+        MMMck();
       }
 
       // numbers.ForEach(Console.WriteLine); // Debug Purposes
