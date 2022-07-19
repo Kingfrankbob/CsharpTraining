@@ -4,12 +4,8 @@ namespace comedians
     {
         public static void Comedy()
         {
-            var count = 0;
             var all = File.ReadAllText("BeeMovie.txt").Split(' ');
-            foreach (var char in all)
-            {
-                count++;
-            }
+            var count = all.Length;
             Console.WriteLine("Total number of words is:" + count);
         }
     }
