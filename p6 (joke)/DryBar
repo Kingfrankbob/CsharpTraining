@@ -1,15 +1,12 @@
-//using System.IO;
-
 namespace comedians
 {
-    public static class DryBar
+    public class DryBar
     {
         public static void Comedy()
         {
             var count = 0;
-            string all = File.ReadAllText(BeeMovie.txt);
-            var words = all.Split(' ');
-            foreach (var char in words)
+            var all = File.ReadAllText("BeeMovie.txt").Split(' ');
+            foreach (var char in all)
             {
                 count++;
             }
