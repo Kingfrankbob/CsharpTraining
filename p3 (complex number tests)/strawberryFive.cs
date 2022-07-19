@@ -11,7 +11,7 @@ namespace frootLoops
       Console.ForegroundColor = ConsoleColor.Red;
       numbers.Add(" ");
       Console.WriteLine("Enter a string of Numbers: (Separated by a Comma)");
-      string? input = Console.ReadLine();
+      string input = Console.ReadLine() ?? "";
       if (input == null)
       {
         while (input == null)
