@@ -50,7 +50,8 @@ namespace frootLoops
       }
 
       // numbers.ForEach(Console.WriteLine); // Debug Purposes
-
+      if(numbers != null)
+      {
       foreach (string value in numbers)
       {
         try
@@ -63,7 +64,7 @@ namespace frootLoops
           //Do nothing
         }
       }
-
+      }
       Console.WriteLine("The biggest of the Entered is: {0}", Previous);
 
 
