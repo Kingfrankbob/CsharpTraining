@@ -1,6 +1,6 @@
 namespace comedians
 {
-    public class DryBar
+    class DryBar
     {
         public static void Comedy()
         {
