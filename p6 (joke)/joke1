@@ -1,0 +1,18 @@
+using System.IO;
+namespace comedians
+{
+    class OverTheBar
+    {
+        public static void CheckWords(string path)
+        {
+            var count = 0;
+            string all = File.ReadAllText(path);
+            var words = all.Split(' ');
+            foreach (var char in words)
+            {
+                count++;
+            }
+            Console.WriteLine("Total number of words is:" + count);
+        }
+    }
+}
