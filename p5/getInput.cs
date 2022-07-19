@@ -103,10 +103,10 @@ namespace yarn
       if(lcek == '-')
       {
         Console.WriteLine("¬_¬ please, enter in a last digit:");
-        string? input1 = Console.ReadLine();
+        string input1 = Console.ReadLine() ?? "";
         try
         {
-          int? Checked = int.Parse(input1);
+          int Checked = int.Parse(input1);
         }
         catch (Exception)
         {
