@@ -1,12 +1,13 @@
-using System.IO;
+//using System.IO;
+
 namespace comedians
 {
-    class OverTheBar
+    public static class DryBar
     {
-        public static void CheckWords(string path)
+        public static void Comedy()
         {
             var count = 0;
-            string all = File.ReadAllText(path);
+            string all = File.ReadAllText(BeeMovie.txt);
             var words = all.Split(' ');
             foreach (var char in words)
             {
