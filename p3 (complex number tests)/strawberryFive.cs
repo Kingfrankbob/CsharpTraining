@@ -18,7 +18,7 @@ namespace frootLoops
         {
           Console.WriteLine("At least put something!!!!");
           Console.WriteLine("Enter a string of Numbers: (Separated by a Comma)");
-          input = Console.ReadLine();
+          input = Console.ReadLine() ?? "";
         }
       }
 
