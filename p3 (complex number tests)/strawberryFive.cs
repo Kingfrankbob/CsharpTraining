@@ -5,7 +5,7 @@ namespace frootLoops
   {
     public static void MMMck()
     {
-      List<string> numbers = new List<string>();
+      List<string> numbers = new List<string>(); 
       int Previous = 0;
       string toap;
       Console.ForegroundColor = ConsoleColor.Red;
@@ -50,6 +50,7 @@ namespace frootLoops
       }
 
       // numbers.ForEach(Console.WriteLine); // Debug Purposes
+      
       if(numbers != null)
       {
       foreach (string value in numbers)
