@@ -4,9 +4,9 @@ namespace comedians
   {
     public static void Reads()
     {
-      string[] words = File.ReadAllText("BeeMovie.txt").Split(' ');
-      string longestWord = words.OrderByDescending(x => x.Length).First();
-      Console.WriteLine("The longest word in the file is: " + longestWord);
+      var words = File.ReadAllText("BeeMovie.txt").Split(' ').OrderByDescending(x => x.Length).First();
+      Console.WriteLine("The longest word in the file is: " + words);
     }
   }
 }
+      //string longestWord = words.OrderByDescending(x => x.Length).First(); //Goes in between 7 and 8
