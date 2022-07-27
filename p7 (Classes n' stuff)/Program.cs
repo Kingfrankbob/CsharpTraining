@@ -5,6 +5,7 @@
     static void Main()
     {
       StopWatchClass.StMain();
+      PostCall.Start();
     }
   }
 }
