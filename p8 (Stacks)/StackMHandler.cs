@@ -19,6 +19,7 @@ namespace Garbage
 
 
         /*
+
               Console.WriteLine(@"Please enter an Input with a valid number:
           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           1. Push(Object)
@@ -50,16 +51,19 @@ namespace Garbage
         case 1:
           Stack.Push(new DateTime(1300, 12, 12, 12, 12, 12));
           StackMain(Stack);
+
           break;
 
         case 2:
           Console.WriteLine(Stack.Pop());
+
           StackMain(Stack);
           break;
 
         case 3:
           Stack.Clear();
           StackMain(Stack);
+
           break;
 
         case 4:
@@ -69,6 +73,7 @@ namespace Garbage
           break;
         }
         */
+
         }
     }
 }

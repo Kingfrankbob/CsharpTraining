@@ -9,16 +9,19 @@ namespace Garbage
     {
         public Boolean changed = false;
         private List<Object> Stackl = new List<Object>();
+
         public void Push(Object obj)
         {
             if (obj == null)
                 throw new TypeLoadException("I cant believe you've done this");
             Stackl.Prepend(obj);
             Console.WriteLine("Added to Stack(not overflow)!");
+
             foreach (var Value in Stackl)
             {
                 Console.WriteLine(Value);
             }
+
 
         }
         public object Pop()
@@ -32,8 +35,10 @@ namespace Garbage
 
         public void Clear()
         {
+
             if(Stackl.Count == 0)
                 throw new Exception("Purely for Debugging");
+
             Stackl.Clear();
             Console.WriteLine("Cleared of all energies!");
             if(changed == true)
