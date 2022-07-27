@@ -1,10 +1,11 @@
 ﻿namespace Garbage
-{
-    class yes
-    {
-    public static void Main()
-    {
-        StackMHandler.StackMain();
+{ 
+   class program{
+
+    public static void Main(){
+      BigStacks.SMain();
+      StackMHandler.StackMain();
     }
-    }
+  }
+
 }
