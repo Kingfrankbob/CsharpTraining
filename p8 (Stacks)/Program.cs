@@ -4,7 +4,8 @@
 
     public static void Main(){
       BigStacks.SMain();
-
+      StackMHandler.StackMain();
     }
   }
+
 }
