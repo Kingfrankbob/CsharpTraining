@@ -41,16 +41,19 @@ namespace Garbage
         case 1:
           Stack.Push(new DateTime(12, 12, 12, 12, 12, 12));
           StackMain(Stack);
+
           break;
 
         case 2:
           Console.WriteLine(Stack.Pop());
+
           StackMain(Stack);
           break;
 
         case 3:
           Stack.Clear();
           StackMain(Stack);
+
           break;
 
         case 4:
