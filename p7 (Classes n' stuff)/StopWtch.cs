@@ -52,7 +52,7 @@ namespace School
             if(SpTm == false)
             {
             Length = End - Start;
-            Console.WriteLine(Length);
+            Console.WriteLine("StopWatch time is:" + Length);
             }
             if(SpTm == true)
             {
@@ -60,12 +60,12 @@ namespace School
                 LengthSP = StartSP.AddYears(rnd.Next(1, 200)) - StartSP.AddDays(rnd.Next(1, 365)) - EndSP.Subtract(new DateTime(1300, 4, 12, 16, 5, 32));
                 var yes = LengthSP;
                 var no = double.Parse(yes.ToString().Replace(':', '3').Replace(' ', '7').Replace('.', '4'));
-                var test = no % rnd.Next(1, 50);
+                var test = no % rnd.Next(1, 15);
                 if(test < 0)
                 {
                     test *= -1;
                 }
-                Console.WriteLine(Length);
+                Console.WriteLine("SpaceTime calculated @" + Length);
                 Console.WriteLine("You have traveled: {0} AU", test);
             }
         }
