@@ -4,7 +4,9 @@
     {
     public static void Main()
     {
-        StackMHandler.StackMain();
+                var Stack = new StackM();
+        StackMHandler.StackMain(Stack);
+
     }
     }
 }

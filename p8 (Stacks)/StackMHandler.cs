@@ -7,7 +7,7 @@ namespace Garbage
 {
     public class StackMHandler
     {
-        public static void StackMain()
+        public static void StackMain(StackM Stack)
         {
               Console.WriteLine(@"Please enter an Input with a valid number:
           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -29,33 +29,33 @@ namespace Garbage
         Console.WriteLine("Please try Again!");
         Console.BackgroundColor = ConsoleColor.Black;
         Console.ForegroundColor = ConsoleColor.Gray;
-        StackMain();
+        StackMain(Stack);
       }
 
         var inputMod = StackM.Confuscationism(input);
-        var Stack = new StackM();
+        
 
-      switch (inputMod)
+      switch (input)
       {
         case 1:
-          Stack.Push(new Object());
-          StackMain();
+          Stack.Push(new DateTime(1300, 12, 12, 12, 12, 12));
+          StackMain(Stack);
           break;
 
         case 2:
           Console.WriteLine(Stack.Pop());
-          StackMain();
+          StackMain(Stack);
           break;
 
         case 3:
           Stack.Clear();
-          StackMain();
+          StackMain(Stack);
           break;
 
         case 4:
           Console.WriteLine("You thought I was gonna do something this time :face_with_raised_brow:");
           Stack.changed = true;
-          StackMain();
+          StackMain(Stack);
           break;
         }
         }

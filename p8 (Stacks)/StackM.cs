@@ -28,6 +28,8 @@ namespace Garbage
 
         public void Clear()
         {
+            if(Stackl.Count == 0)
+                throw new Exception("Purely for Debugging");
             Stackl.Clear();
             Console.WriteLine("Cleared of all energies!");
             if(changed == true)
