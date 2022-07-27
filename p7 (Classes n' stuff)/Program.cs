@@ -6,8 +6,9 @@
     {
       Console.WriteLine("Please choose between the two programs that we have:");
       Console.WriteLine("1. Post");
-      Console.WriteLine("2. Watch");
-      Console.WriteLine("3. Exit");
+      Console.WriteLine("2. Watch (Stupid)");
+      Console.WriteLine("3. Watch (Smart)");
+      Console.WriteLine("4. Exit");
       var input = 0;
       if (int.TryParse(Console.ReadLine() ?? "", out input))
       {
@@ -20,6 +21,10 @@
           WatchFace.ShowTime();
         }
         else if (input == 3)
+        {
+          StopWatchClass.StMain();
+        }
+        else if (input == 4)
         {
           Console.WriteLine("Goodbye");
         }
