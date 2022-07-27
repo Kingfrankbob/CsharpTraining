@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Garbage
+{ 
+   class program{
+
+    public static void Main(){
+      BigStacks.SMain();
+
+    }
+  }
+}
