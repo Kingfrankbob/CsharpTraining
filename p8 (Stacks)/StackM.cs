@@ -13,7 +13,7 @@ namespace Garbage
         {
             if (obj == null)
                 throw new TypeLoadException("I cant believe you've done this");
-            Stackl.Prepend(obj);
+            Stackl.Add(obj);
             Console.WriteLine("Added to Stack(not overflow)!");
             foreach (var Value in Stackl)
             {
@@ -25,9 +25,10 @@ namespace Garbage
         {
             if (Stackl.Count == 0)
                 throw new ArgumentNullException("Don't even know how you got this error!?");
-            var obj = Stackl[0];
-            Stackl.RemoveAt(0);
+           var obj = Stackl[Stackl.Count - 1];
+            Stackl.RemoveAt(Stackl.Count - 1);
             return obj;
+            
         }
 
         public void Clear()

@@ -9,16 +9,7 @@ namespace Garbage
     {
         public static void StackMain(StackM Stack)
         {
-                  var stack = new StackM();
-      stack.Push(1);
-      stack.Push(2);
-      stack.Push(3);
-      Console.WriteLine(stack.Pop());
-      Console.WriteLine(stack.Pop());
-      Console.WriteLine(stack.Pop());
 
-
-        /*
               Console.WriteLine(@"Please enter an Input with a valid number:
           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
           1. Push(Object)
@@ -45,10 +36,10 @@ namespace Garbage
         var inputMod = StackM.Confuscationism(input);
         
 
-      switch (input)
+      switch (inputMod)
       {
         case 1:
-          Stack.Push(new DateTime(1300, 12, 12, 12, 12, 12));
+          Stack.Push(new DateTime(12, 12, 12, 12, 12, 12));
           StackMain(Stack);
           break;
 
@@ -68,7 +59,7 @@ namespace Garbage
           StackMain(Stack);
           break;
         }
-        */
+        
         }
     }
 }
