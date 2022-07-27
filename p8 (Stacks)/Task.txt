@@ -23,6 +23,8 @@ out. But please check the discussion area first to make sure no one has asked th
 question before. This way, you’ll save both your and my time.
 So, let’s get started!
 1
+
+
 Exercise: Design a Stack
 A Stack is a data structure for storing a list of elements in a LIFO (last in, first out) fashion.
 Design a class called Stack with three methods.
