@@ -1,13 +1,13 @@
 Just Messing around and having fun in C sharp
 
-#P1
+# P1
 
 Not much to say, just some basic stuff
 
-#P2
+# P2
 
 Inputs, inputs, inputs. Lots of those in this project.
 
-#P3 
+# P3 
 
 Various Tests on bigger numbers
