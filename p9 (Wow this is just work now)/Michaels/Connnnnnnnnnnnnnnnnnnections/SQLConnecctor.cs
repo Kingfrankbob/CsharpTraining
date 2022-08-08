@@ -7,7 +7,6 @@ namespace FakeWork
 {
   public class SQLConnecctor : DbController
   {
-    private Boolean Connectionset = false;
     private string _ConnectionString;
     public SQLConnecctor(string connectionString) : base(connectionString)
     {
@@ -23,7 +22,7 @@ namespace FakeWork
     }
     public static void Controller()
     {
-
+      Boolean Connectionset = false;
       Console.WriteLine("Enter a connection type or something along the lines!");
       var input = Console.ReadLine();
       if (String.IsNullOrWhiteSpace(input))
@@ -31,7 +30,7 @@ namespace FakeWork
         Console.WriteLine("Try Again!");
         Controller();
       }
-      this.Connectionset == true;
+      Connectionset = true;
       var sqlcon = new SqlConnection(input);
       while (Connectionset == true)
       {
@@ -49,7 +48,7 @@ namespace FakeWork
             sqlcon.CloseConnection();
             break;
           case 3:
-            Connectionset == false;
+            Connectionset = false;
             break;
         }
       }

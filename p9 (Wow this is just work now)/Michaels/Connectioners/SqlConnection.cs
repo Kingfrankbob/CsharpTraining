@@ -12,11 +12,11 @@ namespace FakeWork
         }
         public override void OpenConnection()
         {
-            Console.WriteLine("Connection to Connection Opened!");
+            Console.WriteLine("Connection to Connection {0} Opened!", connectionString);
         }
         public override void CloseConnection()
         {
-            Console.WriteLine("Connection to the Connection Closed?!");
+            Console.WriteLine("Connection to the Connection {0} Closed?!", connectionString);
         }
     }
 }
