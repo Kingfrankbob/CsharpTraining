@@ -10,15 +10,15 @@ namespace FakeWork
         private Boolean Connectionset = false;
         public override void OpenConnection()
         {
-            Console.WriteLine("Connection to {0} Opened!!!!!!", this.connectionString);
+            Console.WriteLine("Connection to {0} Opened!!!!!!", connectionString);
         }
                 public override void CloseConnection()
         {
-            Console.WriteLine("Connection to {0} Closed??????", this.connectionString);
+            Console.WriteLine("Connection to {0} Closed??????", connectionString);
         }
         public static void Controller()
         {
-
+            var Connectionset = false;
             Console.WriteLine("Enter a connection type or something along the lines!");
             var input = Console.ReadLine();
             if(String.IsNullOrWhiteSpace(input))
@@ -26,8 +26,10 @@ namespace FakeWork
                 Console.WriteLine("Try Again!");
                 Controller();
             }
-            Connectionset == true;
+            
+            
             var sqlcon = new SqlConnection(input);
+            Connectionset == true;
             while(Connectionset == true){
             Console.WriteLine(@"Please enter an input
             1. open
