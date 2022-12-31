@@ -1,10 +1,10 @@
 ﻿namespace RealWork
 {
-  public class Program
-  {
-    public static void Main()
+    public class Program
     {
-      SqlConnectionController.Controller();
+        public static void MainConnecterS()
+        {
+            SqlConnectionController.Controller();
+        }
     }
-  }
 }

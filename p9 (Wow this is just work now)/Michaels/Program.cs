@@ -2,7 +2,7 @@
 {
     class Program
     {
-        public static void Main()
+        public static void MainConnectorM()
         {
             SQLConnecctor.Controller();
         }

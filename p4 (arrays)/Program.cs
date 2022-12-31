@@ -2,7 +2,7 @@
 {
   class program
   {
-    public static void Main()
+    public static void MainVacashon()
     {
       Console.ForegroundColor = ConsoleColor.Gray;
       Console.BackgroundColor = ConsoleColor.Black;
@@ -12,27 +12,27 @@
 
         case 1:
           NYC_ONE.noFriends();
-          program.Main();
+          program.MainVacashon();
           break;
 
         case 2:
           madagascarTwo.Reversi();
-          program.Main();
+          program.MainVacashon();
           break;
 
         case 3:
           MexicoThree.numberAsk();
-          program.Main();
+          program.MainVacashon();
           break;
 
         case 4:
           tahitiFour.uniquity();
-          program.Main();
+          program.MainVacashon();
           break;
 
         case 5:
           moscowFive.Smallestofall();
-          program.Main();
+          program.MainVacashon();
           break;
 
         case 6:
@@ -45,7 +45,7 @@
 
         default:
           Console.WriteLine("Invalid Input");
-          program.Main();
+          program.MainVacashon();
           break;
 
       }

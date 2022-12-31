@@ -2,7 +2,7 @@
 {
     public class program
     {
-        static void Main()
+        static void MainFruits()
         {
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.BackgroundColor = ConsoleColor.Black;
@@ -12,27 +12,27 @@
 
                 case 1:
                     cherryOne.threeDone();
-                    program.Main();
+                    program.MainFruits();
                     break;
-                
+
                 case 2:
                     appleTwo.itOkay();
-                    program.Main();
+                    program.MainFruits();
                     break;
 
                 case 3:
                     kiwiThree.kwFactor();
-                    program.Main();
+                    program.MainFruits();
                     break;
 
                 case 4:
                     blueberryFour.randomNumberGuess();
-                    program.Main();
+                    program.MainFruits();
                     break;
 
                 case 5:
                     strawberryFive.MMMck();
-                    program.Main();
+                    program.MainFruits();
                     break;
 
                 case 6:
@@ -44,10 +44,10 @@
                     break;
 
                 default:
-                    // Console.WriteLine("Invalid Input");
-                    // program.Main();
+                    Console.WriteLine("Invalid Input");
+                    program.MainFruits();
                     break;
-                    
+
             }
         }
     }

@@ -2,7 +2,7 @@
 {
     class program
     {
-        static void Main()
+        static void MainColors()
         {
             int choice = getInput.getChoice();
             switch (choice)
@@ -10,22 +10,22 @@
 
                 case 1:
                     problemOne.Validation();
-                    program.Main();
+                    program.MainColors();
                     break;
 
                 case 2:
                     problemTwo.BiggerOfTwo();
-                    program.Main();
+                    program.MainColors();
                     break;
 
                 case 3:
                     problemThree.LandscapeOrPortrait();
-                    program.Main();
+                    program.MainColors();
                     break;
 
                 case 4:
                     problemFour.SpeedCamera();
-                    program.Main();
+                    program.MainColors();
                     break;
 
                 case 5:
@@ -38,7 +38,7 @@
 
                 default:
                     Console.WriteLine("Invalid Input");
-                    program.Main();
+                    program.MainColors();
                     break;
             }
         }

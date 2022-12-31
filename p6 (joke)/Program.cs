@@ -1,9 +1,11 @@
 ﻿namespace comedians
 {
-  class Program {
-    static void Main() {
-      RobinWilliams.Reads();
-      DryBar.Comedy();
+    class Program
+    {
+        static void MainJokes()
+        {
+            RobinWilliams.Reads();
+            DryBar.Comedy();
+        }
     }
-  }
 }
