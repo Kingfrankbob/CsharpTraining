@@ -1,13 +1,7 @@
 Just Messing around and having fun in C sharp
 
-# P1
+# Why?
+This was a training course offered to me with a relative, and so I could not resist. I had always hated C#, and so this was a good learning point for me.
 
-Not much to say, just some basic stuff
-
-# P2
-
-Inputs, inputs, inputs. Lots of those in this project.
-
-# P3 
-
-Various Tests on bigger numbers
+# Projects
+The themes are written in the folder, and the namespaces are just silly!
