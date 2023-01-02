@@ -7,16 +7,16 @@ namespace FakeWork
 {
     public abstract class DbConnection
     {
-        public string connectionString;
+        public string? connectionString;
         public TimeSpan Timeout { get; set; }
         public DbConnection(string connectioner)
         {
-            if(!String.IsNullOrWhiteSpace(connectioner))
+            if (!String.IsNullOrWhiteSpace(connectioner))
             {
                 connectionString = connectioner;
             }
             else
-            {   
+            {
                 Console.WriteLine("Please try again u nerd!!!!");
             }
         }
